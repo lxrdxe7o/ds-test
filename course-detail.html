@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Details | Syntax Sphere</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .curriculum-item {
+        padding: 15px;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        background: #fff;
+      }
+      .curriculum-item:hover {
+        background-color: var(--bg-light);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <span style="color: var(--primary); font-size: 2rem">{ }</span> Syntax
+          Sphere
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="courses.html" class="nav-link">All Courses</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="cart-btn" id="cart-toggle">
+            🛒
+            <span class="cart-badge" id="cart-count">0</span>
+          </button>
+          <div id="auth-section">
+            <button class="btn btn-primary btn-sm" id="login-btn">Login</button>
+          </div>
+          <div class="mobile-menu-btn">☰</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Cart Drawer -->
+    <div class="cart-wrapper">
+      <div class="cart-overlay"></div>
+      <div class="cart-drawer">
+        <div class="cart-header">
+          <h3>Your Cart</h3>
+          <button class="btn btn-outline btn-sm" id="close-cart">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+          <!-- Cart Items Injected Here -->
+          <p class="text-center description" style="margin-top: 50px">
+            Your cart is empty.
+          </p>
+        </div>
+        <div class="cart-footer">
+          <div
+            class="flex justify-between"
+            style="margin-bottom: 20px; font-weight: 700; font-size: 1.2rem"
+          >
+            <span>Total:</span>
+            <span id="cart-total">৳ 0</span>
+          </div>
+          <button
+            class="btn btn-primary"
+            style="width: 100%"
+            onclick="alert('Checkout Mockup Success!')"
+          >
+            Checkout Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal-wrapper" id="login-modal-wrapper">
+      <div class="modal-overlay" id="blur-overlay"></div>
+      <div class="modal">
+        <div
+          class="flex justify-between items-center"
+          style="margin-bottom: 20px"
+        >
+          <h3 style="margin: 0">Login</h3>
+          <button class="btn btn-outline btn-sm" id="close-login">✕</button>
+        </div>
+        <form id="login-form">
+          <div style="margin-bottom: 15px">
+            <label style="display: block; margin-bottom: 5px; font-weight: 500"
+              >Email</label
+            >
+            <input
+              type="email"
+              placeholder="student@syntaxsphere.com"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid var(--border);
+                border-radius: 6px;
+              "
+            />
+          </div>
+          <div style="margin-bottom: 20px">
+            <label style="display: block; margin-bottom: 5px; font-weight: 500"
+              >Password</label
+            >
+            <input
+              type="password"
+              placeholder="Any password works"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid var(--border);
+                border-radius: 6px;
+              "
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%">
+            Login
+          </button>
+          <p
+            class="description text-center"
+            style="margin-top: 15px; font-size: 0.85rem"
+          >
+            No account? <a href="#" style="color: var(--primary)">Sign up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Course Content Container -->
+    <div id="course-detail-content">
+      <!-- Filled dynamically by JS -->
+      <div class="container text-center section">
+        <p>Loading course details...</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="copyright text-center">
+          &copy; 2026 Syntax Sphere. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

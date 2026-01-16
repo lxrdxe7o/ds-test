@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Syntax Sphere</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 12px 16px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        font-family: inherit;
+      }
+      .contact-form textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+      }
+      .contact-info-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+      .contact-info-icon {
+        width: 50px;
+        height: 50px;
+        background: var(--primary-light);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <span style="color: var(--primary); font-size: 2rem">{ }</span> Syntax
+          Sphere
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="courses.html" class="nav-link">All Courses</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link" style="color: var(--primary)"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="cart-btn" id="cart-toggle">
+            🛒
+            <span class="cart-badge" id="cart-count">0</span>
+          </button>
+          <div id="auth-section">
+            <button class="btn btn-primary btn-sm" id="login-btn">Login</button>
+          </div>
+          <div class="mobile-menu-btn">☰</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="section"
+      style="
+        background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%);
+        text-align: center;
+      "
+    >
+      <div class="container">
+        <h1>Get in <span style="color: var(--primary)">Touch</span></h1>
+        <p
+          class="description"
+          style="font-size: 1.2rem; max-width: 600px; margin: 0 auto"
+        >
+          Have questions or feedback? We'd love to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container flex" style="gap: 60px; flex-wrap: wrap">
+        <!-- Contact Form -->
+        <div style="flex: 2; min-width: 300px">
+          <h2>Send us a Message</h2>
+          <form
+            class="contact-form"
+            onsubmit="event.preventDefault(); alert('Message sent! (Mock)'); this.reset();"
+          >
+            <div class="flex gap-4" style="flex-wrap: wrap">
+              <div style="flex: 1; min-width: 200px">
+                <input type="text" placeholder="Your Name" required />
+              </div>
+              <div style="flex: 1; min-width: 200px">
+                <input type="email" placeholder="Your Email" required />
+              </div>
+            </div>
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary" style="width: 100%">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div style="flex: 1; min-width: 280px">
+          <h2>Contact Information</h2>
+          <div style="margin-top: 30px">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <h4 style="margin-bottom: 0">Address</h4>
+                <p class="description" style="margin: 0">Dhaka, Bangladesh</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📧</div>
+              <div>
+                <h4 style="margin-bottom: 0">Email</h4>
+                <p class="description" style="margin: 0">
+                  hello@syntaxsphere.com
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <h4 style="margin-bottom: 0">Phone</h4>
+                <p class="description" style="margin: 0">+880 1234 567890</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="copyright text-center">
+          &copy; 2026 Syntax Sphere. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

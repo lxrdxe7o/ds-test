@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Syntax Sphere</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <span style="color: var(--primary); font-size: 2rem">{ }</span> Syntax
+          Sphere
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="courses.html" class="nav-link">All Courses</a>
+          <a href="about.html" class="nav-link" style="color: var(--primary)"
+            >About Us</a
+          >
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="cart-btn" id="cart-toggle">
+            🛒
+            <span class="cart-badge" id="cart-count">0</span>
+          </button>
+          <div id="auth-section">
+            <button class="btn btn-primary btn-sm" id="login-btn">Login</button>
+          </div>
+          <div class="mobile-menu-btn">☰</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="section"
+      style="
+        background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%);
+        text-align: center;
+      "
+    >
+      <div class="container">
+        <h1>About <span style="color: var(--primary)">Syntax Sphere</span></h1>
+        <p
+          class="description"
+          style="font-size: 1.2rem; max-width: 700px; margin: 0 auto"
+        >
+          Empowering the next generation of developers with world-class,
+          accessible education.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section">
+      <div
+        class="container flex"
+        style="gap: 60px; align-items: center; flex-wrap: wrap"
+      >
+        <div style="flex: 1; min-width: 300px">
+          <img
+            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            alt="Team"
+            style="border-radius: 16px; box-shadow: var(--shadow-lg)"
+          />
+        </div>
+        <div style="flex: 1; min-width: 300px">
+          <h2>Our Mission</h2>
+          <p class="description">
+            At Syntax Sphere, we believe that quality education should be
+            accessible to everyone. Our mission is to bridge the gap between
+            aspiring developers and industry-ready skills through curated,
+            practical courses taught by experienced professionals.
+          </p>
+          <p class="description">
+            We focus on hands-on learning, real-world projects, and building a
+            supportive community where learners can thrive and grow together.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section bg-light">
+      <div class="container text-center">
+        <h2>Our Core Values</h2>
+        <div class="grid grid-cols-3" style="margin-top: 40px">
+          <div class="card" style="padding: 30px; text-align: center">
+            <div style="font-size: 3rem; margin-bottom: 15px">🎯</div>
+            <h3 style="font-size: 1.2rem">Quality First</h3>
+            <p class="description">
+              Every course is crafted with care, focusing on practical skills
+              that matter.
+            </p>
+          </div>
+          <div class="card" style="padding: 30px; text-align: center">
+            <div style="font-size: 3rem; margin-bottom: 15px">🌍</div>
+            <h3 style="font-size: 1.2rem">Accessible Learning</h3>
+            <p class="description">
+              Free, high-quality education available to anyone, anywhere.
+            </p>
+          </div>
+          <div class="card" style="padding: 30px; text-align: center">
+            <div style="font-size: 3rem; margin-bottom: 15px">🤝</div>
+            <h3 style="font-size: 1.2rem">Community Driven</h3>
+            <p class="description">
+              A supportive community of learners and mentors helping each other
+              succeed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="copyright text-center">
+          &copy; 2026 Syntax Sphere. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

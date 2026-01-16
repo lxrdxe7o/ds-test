@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syntax Sphere | Master Coding Today</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <span style="color: var(--primary); font-size: 2rem">{ }</span> Syntax
+          Sphere
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link" style="color: var(--primary)"
+            >Home</a
+          >
+          <a href="courses.html" class="nav-link">All Courses</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="cart-btn" id="cart-toggle">
+            🛒
+            <span class="cart-badge" id="cart-count">0</span>
+          </button>
+          <div id="auth-section">
+            <button class="btn btn-primary btn-sm" id="login-btn">Login</button>
+          </div>
+          <div class="mobile-menu-btn">☰</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Cart Drawer -->
+    <div class="cart-wrapper">
+      <div class="cart-overlay"></div>
+      <div class="cart-drawer">
+        <div class="cart-header">
+          <h3>Your Cart</h3>
+          <button class="btn btn-outline btn-sm" id="close-cart">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+          <!-- Cart Items Injected Here -->
+          <p class="text-center description" style="margin-top: 50px">
+            Your cart is empty.
+          </p>
+        </div>
+        <div class="cart-footer">
+          <div
+            class="flex justify-between"
+            style="margin-bottom: 20px; font-weight: 700; font-size: 1.2rem"
+          >
+            <span>Total:</span>
+            <span id="cart-total">৳ 0</span>
+          </div>
+          <button
+            class="btn btn-primary"
+            style="width: 100%"
+            onclick="alert('Checkout Mockup Success!')"
+          >
+            Checkout Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal-wrapper" id="login-modal-wrapper">
+      <div class="modal-overlay" id="blur-overlay"></div>
+      <div class="modal">
+        <div
+          class="flex justify-between items-center"
+          style="margin-bottom: 20px"
+        >
+          <h3 style="margin: 0">Login</h3>
+          <button class="btn btn-outline btn-sm" id="close-login">✕</button>
+        </div>
+        <form id="login-form">
+          <div style="margin-bottom: 15px">
+            <label style="display: block; margin-bottom: 5px; font-weight: 500"
+              >Email</label
+            >
+            <input
+              type="email"
+              placeholder="student@syntaxsphere.com"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid var(--border);
+                border-radius: 6px;
+              "
+            />
+          </div>
+          <div style="margin-bottom: 20px">
+            <label style="display: block; margin-bottom: 5px; font-weight: 500"
+              >Password</label
+            >
+            <input
+              type="password"
+              placeholder="Any password works"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid var(--border);
+                border-radius: 6px;
+              "
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%">
+            Login
+          </button>
+          <p
+            class="description text-center"
+            style="margin-top: 15px; font-size: 0.85rem"
+          >
+            No account? <a href="#" style="color: var(--primary)">Sign up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="section"
+      style="background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%)"
+    >
+      <div
+        class="container flex items-center justify-between"
+        style="gap: 40px; flex-wrap: wrap"
+      >
+        <div style="flex: 1; min-width: 300px">
+          <h1 style="margin-bottom: 20px">
+            Unlock Your Potential with
+            <span style="color: var(--primary)">Syntax Sphere</span>
+          </h1>
+          <p class="description" style="font-size: 1.2rem; margin-bottom: 30px">
+            The ultimate platform to master coding, design, and data science.
+            Join thousands of students achieving their dreams.
+          </p>
+          <div class="flex gap-4">
+            <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+            <a href="#" class="btn btn-outline">Watch Demo</a>
+          </div>
+        </div>
+        <div style="flex: 1; min-width: 300px">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            alt="Students learning"
+            style="border-radius: 20px; box-shadow: var(--shadow-lg)"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="grid grid-cols-3 text-center">
+          <div>
+            <h2
+              style="color: var(--primary); font-size: 2.5rem; margin-bottom: 0"
+            >
+              15k+
+            </h2>
+            <p class="description">Active Students</p>
+          </div>
+          <div>
+            <h2
+              style="color: var(--primary); font-size: 2.5rem; margin-bottom: 0"
+            >
+              120+
+            </h2>
+            <p class="description">Premium Courses</p>
+          </div>
+          <div>
+            <h2
+              style="color: var(--primary); font-size: 2.5rem; margin-bottom: 0"
+            >
+              50+
+            </h2>
+            <p class="description">Expert Instructors</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 50px">
+          <h2>Browse Categories</h2>
+          <p class="description">Find the perfect path for your career.</p>
+        </div>
+        <div
+          id="categories-grid"
+          class="grid"
+          style="
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+          "
+        >
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Courses Section -->
+    <section class="section bg-light">
+      <div class="container">
+        <div
+          class="flex items-center justify-between"
+          style="margin-bottom: 40px"
+        >
+          <h2>Popular Courses</h2>
+          <a href="courses.html" class="btn btn-outline btn-sm">View All</a>
+        </div>
+        <div id="popular-courses-grid" class="grid grid-cols-3">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div
+          class="grid"
+          style="
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+          "
+        >
+          <div class="footer-col">
+            <h4 style="color: var(--primary)">{ } Syntax Sphere</h4>
+            <p style="color: #9ca3af; font-size: 0.9rem">
+              Empowering the next generation of developers with world-class
+              education.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="#" class="footer-link">About Us</a>
+            <a href="courses.html" class="footer-link">Courses</a>
+            <a href="#" class="footer-link">Instructors</a>
+            <a href="#" class="footer-link">Success Stories</a>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#" class="footer-link">Help Center</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Contact Us</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <p class="footer-link">Email: hello@syntaxsphere.com</p>
+            <p class="footer-link">Phone: +880 1234 567890</p>
+            <p class="footer-link">Dhaka, Bangladesh</p>
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; 2026 Syntax Sphere. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
