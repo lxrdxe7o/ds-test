@@ -104,13 +104,6 @@ syntax-sphere/
     features: ["Module 1", "Module 2"]
 }
 ```
-
----
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
 Made with ❤️ for learning.
