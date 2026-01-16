@@ -1,17 +1,5 @@
 # Syntax Sphere 🌐
 
-A modern, beginner-friendly course platform built with vanilla HTML, CSS, and JavaScript.
-
----
-
-## ✨ Features
-
-- 🎨 **Modern UI**: Emerald green theme with glassmorphism effects
-- 🛒 **Shopping Cart**: Persistent cart using localStorage
-- 🔐 **User Auth**: Mock login/logout simulation
-- 📱 **Responsive**: Mobile-first design
-- ⚡ **No Dependencies**: Pure HTML/CSS/JS, no frameworks required
-
 ---
 
 ## 🚀 Quick Start
