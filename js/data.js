@@ -79,7 +79,7 @@ const courses = [
     students: 1500,
     category: "Design",
     image:
-      "https://images.unsplash.com/photo-1586717791821-3f44a5638d48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&q=80",
     videoId: "F18K9q5D_mg", // Generic placeholder
     description:
       "Learn the art of User User Interface and User Experience design using Figma and Adobe XD.",

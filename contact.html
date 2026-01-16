@@ -77,6 +77,95 @@
       </div>
     </header>
 
+    <!-- Cart Drawer -->
+    <div class="cart-wrapper">
+      <div class="cart-overlay"></div>
+      <div class="cart-drawer">
+        <div class="cart-header">
+          <h3>Your Cart</h3>
+          <button class="btn btn-outline btn-sm" id="close-cart">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+          <p class="text-center description" style="margin-top: 50px">
+            Your cart is empty.
+          </p>
+        </div>
+        <div class="cart-footer">
+          <div
+            class="flex justify-between"
+            style="margin-bottom: 20px; font-weight: 700; font-size: 1.2rem"
+          >
+            <span>Total:</span>
+            <span id="cart-total">৳ 0</span>
+          </div>
+          <button
+            class="btn btn-primary"
+            style="width: 100%"
+            onclick="alert('Checkout Mockup Success!')"
+          >
+            Checkout Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal-wrapper" id="login-modal-wrapper">
+      <div class="modal-overlay" id="blur-overlay"></div>
+      <div class="modal">
+        <div
+          class="flex justify-between items-center"
+          style="margin-bottom: 20px"
+        >
+          <h3 style="margin: 0">Login</h3>
+          <button class="btn btn-outline btn-sm" id="close-login">✕</button>
+        </div>
+        <form id="login-form">
+          <div style="margin-bottom: 15px">
+            <label style="display: block; margin-bottom: 5px; font-weight: 500"
+              >Email</label
+            >
+            <input
+              type="email"
+              placeholder="student@syntaxsphere.com"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid var(--border);
+                border-radius: 6px;
+              "
+            />
+          </div>
+          <div style="margin-bottom: 20px">
+            <label style="display: block; margin-bottom: 5px; font-weight: 500"
+              >Password</label
+            >
+            <input
+              type="password"
+              placeholder="Any password works"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid var(--border);
+                border-radius: 6px;
+              "
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%">
+            Login
+          </button>
+          <p
+            class="description text-center"
+            style="margin-top: 15px; font-size: 0.85rem"
+          >
+            No account? <a href="#" style="color: var(--primary)">Sign up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
     <!-- Hero Section -->
     <section
       class="section"
