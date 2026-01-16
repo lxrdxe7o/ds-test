@@ -2,8 +2,6 @@
 
 A modern, beginner-friendly course platform built with vanilla HTML, CSS, and JavaScript.
 
-![Syntax Sphere Banner](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80)
-
 ---
 
 ## ✨ Features
