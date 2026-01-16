@@ -106,4 +106,4 @@ syntax-sphere/
 ```
 ---
 
-Made with ❤️ for learning.
+Made for learning.
