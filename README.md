@@ -14,8 +14,8 @@
 1. **Clone the Repository**
 
    ```bash
-   git clone <your-repo-url>
-   cd syntax-sphere
+   git clone https://github.com/lxrdxe7o/ds-test.git
+   cd ds-test
    ```
 
 2. **Open in VS Code**
